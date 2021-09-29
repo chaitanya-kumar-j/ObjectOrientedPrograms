@@ -1,0 +1,17 @@
+[
+  {
+    "ItemName": "Rice",
+    "ItemWeight": 10,
+    "ItemCost": 500
+  },
+  {
+    "ItemName": "Pulses",
+    "ItemWeight": 5,
+    "ItemCost": 300
+  },
+  {
+    "ItemName": "Wheat",
+    "ItemWeight": 15,
+    "ItemCost": 450
+  }
+]
