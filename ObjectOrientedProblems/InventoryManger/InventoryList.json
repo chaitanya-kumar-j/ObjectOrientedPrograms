@@ -1,0 +1,58 @@
+{
+  "Rice": [
+    {
+      "ItemName": "RiceVar1",
+      "ItemWeight": 50,
+      "ItemCost": 2500
+    },
+    {
+      "ItemName": "RiceVar2",
+      "ItemWeight": 100,
+      "ItemCost": 4000
+    },
+    {
+      "ItemName": "RiceVar3",
+      "ItemWeight": 50,
+      "ItemCost": 1500
+    }
+  ],
+  "Wheat": [
+    {
+      "ItemName": "WheatVar1",
+      "ItemWeight": 30,
+      "ItemCost": 1500
+    },
+    {
+      "ItemName": "WheatVar1",
+      "ItemWeight": 50,
+      "ItemCost": 1500
+    },
+    {
+      "ItemName": "WheatVar1",
+      "ItemWeight": 20,
+      "ItemCost": 400
+    }
+  ],
+  "Pulses": [
+    {
+      "ItemName": "PulsesVar1",
+      "ItemWeight": 60,
+      "ItemCost": 6000
+    },
+    {
+      "ItemName": "PulsesVar2",
+      "ItemWeight": 40,
+      "ItemCost": 3200
+    },
+    {
+      "ItemName": "PulsesVar3",
+      "ItemWeight": 20,
+      "ItemCost": 1200
+    },
+    {
+      "ItemName": "PulsesVar4",
+      "ItemWeight": 10,
+      "ItemCost": 1200
+    }
+  ]
+}
