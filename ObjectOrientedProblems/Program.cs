@@ -11,8 +11,9 @@ namespace ObjectOrientedProblems
             while (isRun)
             {
                 // select program number to run
-                Console.WriteLine("Enter the number of program to run." +
-                    "(1. InventoryDataJSON, 2. Inventory manager)");
+                Console.WriteLine("Enter the number of program to run.\n" +
+                    "(1. InventoryDataJSON, 2. Inventory manager\n" +
+                    "3. Stock Account management, 4. Stock data processing)");
                 int selectNumber = Convert.ToInt32(Console.ReadLine());
                 switch (selectNumber)
                 {
@@ -26,6 +27,13 @@ namespace ObjectOrientedProblems
                         string jsonFilePath1 = @"G:\BridgeLabz\ObjectOrientedPrograms\ObjectOrientedProblems\InventoryManger\InventoryList.json";
                         inventoryData.ReadData(jsonFilePath1);
                         inventoryData.Display();
+                        break;
+                    case 3:
+                        StockAccountManagement.StockAccountManager stockAccount = new StockAccountManagement.StockAccountManager();
+                        string stockFilepath = @"G:\BridgeLabz\ObjectOrientedPrograms\ObjectOrientedProblems\StockAccountManagement\StockList.json";
+                        stockAccount.ListCompany(stockFilepath);
+                        break;
+                    case 4:
                         break;
                     default:
                         isRun = !isRun;
