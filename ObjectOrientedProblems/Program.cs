@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ObjectOrientedProblems.InventoryManger;
+using System;
 
 namespace ObjectOrientedProblems
 {
@@ -8,6 +9,11 @@ namespace ObjectOrientedProblems
         {
             // Run or exit
             bool isRun = true;
+            InventoryManager inventoryData = new InventoryManager();
+            string jsonFilePath1 = @"G:\BridgeLabz\ObjectOrientedPrograms\ObjectOrientedProblems\InventoryManger\InventoryList.json";
+            StockAccountManagement.StockAccountManager stockAccount = new StockAccountManagement.StockAccountManager();
+            string stockFilepath = @"G:\BridgeLabz\ObjectOrientedPrograms\ObjectOrientedProblems\StockAccountManagement\StockList.json";
+            string transFilePath = @"G:\BridgeLabz\ObjectOrientedPrograms\ObjectOrientedProblems\StockAccountManagement\TransactionList.json";
             while (isRun)
             {
                 // select program number to run
@@ -23,17 +29,14 @@ namespace ObjectOrientedProblems
                         inventory.ListItems(jsonFilePath);
                         break;
                     case 2:
-                        InventoryManger.InventoryManager inventoryData = new InventoryManger.InventoryManager();
-                        string jsonFilePath1 = @"G:\BridgeLabz\ObjectOrientedPrograms\ObjectOrientedProblems\InventoryManger\InventoryList.json";
                         inventoryData.ReadData(jsonFilePath1);
                         inventoryData.Display();
                         break;
                     case 3:
-                        StockAccountManagement.StockAccountManager stockAccount = new StockAccountManagement.StockAccountManager();
-                        string stockFilepath = @"G:\BridgeLabz\ObjectOrientedPrograms\ObjectOrientedProblems\StockAccountManagement\StockList.json";
-                        stockAccount.ListCompany(stockFilepath);
+                        stockAccount.TotalValue(stockFilepath);
                         break;
                     case 4:
+                        stockAccount.BuyShares(stockFilepath,transFilePath);
                         break;
                     default:
                         isRun = !isRun;

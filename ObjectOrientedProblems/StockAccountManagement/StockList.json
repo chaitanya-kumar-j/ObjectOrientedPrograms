@@ -1,17 +1,20 @@
 [
   {
     "CompanyName": "Company1",
-    "NumberOfShares": 1000,
-    "PriceOfShare": 2000
+    "NumberOfShares": 1010,
+    "PriceOfShare": 2000,
+    "TotalValue": 2020000
   },
   {
     "CompanyName": "Company2",
-    "NumberOfShares": 2500,
-    "PriceOfShare": 1200
+    "NumberOfShares": 291,
+    "PriceOfShare": 1200,
+    "TotalValue": 349200
   },
   {
     "CompanyName": "Company3",
-    "NumberOfShares": 5000,
-    "PriceOfShare": 1000
+    "NumberOfShares": 5006,
+    "PriceOfShare": 1000,
+    "TotalValue": 5006000
   }
 ]

@@ -4,11 +4,11 @@ using System.Text;
 
 namespace ObjectOrientedProblems.StockAccountManagement
 {
-    class StockModel
+    class TransactionModel
     {
-        public string CompanyName { get; set; }
+        public string ComanyName { get; set; }
         public int NumberOfShares { get; set; }
         public int PriceOfShare { get; set; }
-        public int TotalValue { get; set; }
+        public string TimeOfTransaction { get; set; }
     }
 }
